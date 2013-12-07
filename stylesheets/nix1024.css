@@ -1,0 +1,119 @@
+#wrap
+{
+	width: 960px;
+	margin: 0 auto 48px auto;
+	margin: 0 auto 3.428571429rem auto;
+	padding: 0 40px;
+	padding: 0 2.857142857rem;
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+	background-color: white;
+}
+
+#header
+{
+	border-bottom: none;
+}
+
+#header .logo a
+{
+	color: #444;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+#header .main-nav
+{
+	float: left;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding: 10px 0;
+	width: 100%;
+	margin: 20px 0;
+}
+
+#header .main-nav ul li
+{
+	padding: 0 2.857142857rem 0 0;
+	font-size: 0.857142857rem;
+}
+
+#header .main-nav ul li .current
+{
+	font-weight: bold;
+}
+
+#header .main-nav ul li a
+{
+	color: #6a6a6a;
+	text-transform:uppercase;
+}
+
+a
+{
+	color: #08c; 
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+h2 a
+{
+	color: #08c !important;
+	font-size: 20px !important;
+	font-weight: normal !important;
+}
+
+h2 a:hover
+{
+	text-decoration: underline;
+}
+
+.sider h3
+{
+	font-size: 1em;
+	color: #636363;
+	text-transform: uppercase;
+	margin: 0 0 1em 0;
+	font-weight: bold;
+}
+
+.sider aside
+{
+	margin-top: 30px;
+}
+
+.sider aside:first-child
+{
+	margin-top: 0;
+}
+
+.sider a
+{
+	font-size: 1em;
+	color: #666;
+}
+
+.sider a:hover
+{
+	color: #444;
+}
+
+#footer
+{
+	padding: 30px 0;
+	border-top: 1px solid #ccc;
+}
+
+.post .entry h1
+{
+	font-size: 1.7em;
+	border-bottom: 1px solid #ccc;
+}
+
+.post .entry h2
+{
+	font-size: 1.4em;
+	border-bottom: 1px solid #eee;
+}

@@ -1,0 +1,26 @@
+<footer id="footer">
+	<div class="footer-right">
+		<a href="/template" title=" Clone Template"> <i class="icon-cloud-download"></i>
+		</a>
+		<a target="_blank" href="http://farbox.com/service/sync/dropbox/{{ site.uid }}"><i class="icon-refresh"></i>
+		</a>
+	</div>
+	<div class="copyright">
+		Powered By
+		<a target='_blank' href="http://www.farbox.com">FarBox</a>. 
+		Theme by <a href="http://nixwang.com">Nix</a>.
+        {{ site.configs.analytics }}
+	</div>
+</footer>
+{% if site.configs.duoshuo %}
+            <script type="text/javascript">
+            var duoshuoQuery = {short_name:"{{ site.configs.duoshuo }}"};
+            (function() {
+                var ds = document.createElement('script');
+                ds.type = 'text/javascript';ds.async = true;
+                ds.src = 'http://static.duoshuo.com/embed.js';
+                ds.charset = 'UTF-8';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+            })();
+            </script>
+{% endif %}
