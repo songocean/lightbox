@@ -1,13 +1,13 @@
 <div class="sider">
     {% if site.configs.weibo %}
     <aside>
-        <h3><i class="icon-weibo"></i>&nbspWeibo</h3>
+        <h3><i class="icon-weibo"></i>&nbsp;Weibo</h3>
         <iframe width="100%" height="400" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=400&fansRow=1&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&{{ site.configs.weibo }}&dpc=1"></iframe>
     </aside>
     {% endif %}
     {% if site.configs.rpost %}
     <aside>
-        <h3><i class="icon-time"></i>&nbspRecent Article</h3>
+        <h3><i class="icon-time"></i>&nbsp;Recent Article</h3>
         <ul>
         {% set rposts= get_posts('/',site.configs.rpost) %}
             {% for post in rposts %}
@@ -20,16 +20,16 @@
     {% endif %}
     {% if site.configs.duoshuo %}
     <aside>
-        <h3><i class="icon-comments"></i>&nbspRecent Comments</h3>
+        <h3><i class="icon-comments"></i>&nbsp;Recent Comments</h3>
         <ul class="ds-recent-comments" data-show-title="0" data-show-time="0" data-show-avatars="0"></ul>
     </aside>
     {% endif %}
     <aside>
-        <h3><i class="icon-tags"></i>&nbspTags</h3>
+        <h3><i class="icon-tags"></i>&nbsp;Tags</h3>
         <div>
             <ul>
                 {% for tag_name, tag_count in site.tags %}
-                <li style="list-style-type:none;"><a href="/tags/{{tag_name}}">{{ tag_name }}&nbsp[{{ tag_count }}]</a><li>
+                <li style="list-style-type:none;"><a href="/tags/{{tag_name}}">{{ tag_name }}&nbsp;<span class="badge">{{ tag_count }}</span></a><li>
                 {% endfor %}
             <ul>
         </div>
