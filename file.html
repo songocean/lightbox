@@ -20,26 +20,26 @@
         <a href="/folder/photo">返回上级</a>
         <div class="image">
             
-            <img src="{{ file.url }}?width=640" />
+            <img src="{{ file.url }}?width=500" />
 
             <div class="connected-images">
                 {% if pre_one %}
                     <a href="/file/{{ pre_one.path }}" class="pre">
-                        <span>&lt;{{ pre_one.title }}</span>
+                        <span><i class="icon-chevron-sign-left"></i></span>
                     </a>
                 {% else %}
                     <a href="#pre_one" class="pre" id="pre_one">
-                        <span>&lt;没有上一张了</span>
+                        <span><i class="icon-minus-sign"></i></span>
                     </a>
                 {% endif %}
 
                 {% if next_one %}
                     <a href="/file/{{ next_one.path }}" class="next">
-                        <span>{{ next_one.title }}&gt;</span>
+                        <span><i class="icon-chevron-sign-right"></i></span>
                     </a>
                 {% else %}
                     <a href="#next_one" class="next" id="next_one">
-                        <span>没有下一张了&gt;</span>
+                        <span><i class="icon-minus-sign"></i></span>
                     </a>
                 {% endif %}
             </div>

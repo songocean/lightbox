@@ -202,21 +202,25 @@ body {
 
 /*--- post heading ---*/
 .entry h1, .h1, .entry h2, .h2, .entry h3, .h3, .entry h4, .h4 {
-	margin-top: 1.5em;
-	margin-bottom: 1em;
-	font-weight: 600;
+	margin-top: 30px;
+	color: #0c3762;
+	border-bottom: dotted thin #e0e0e0;
 }
 
 .entry h1 {
 	font-size: 1.5em;
-	border-bottom: 1px solid #eee;
+	font-weight: bold;
 }
 
 .entry h2 {
-	font-size: 1.3em;
+	font-size: 1.2em;
+	font-weight: normal;
+
+
 }
 .entry h3 {
 	font-size: 1.1em;
+	font-weight: normal;
 }
 .nav-single {
 	margin:10px 0
@@ -254,55 +258,30 @@ body {
 .archive-list .listing-item a {
 	margin-left:1em
 }
-.image-list {
-	list-style-type:none;
-	display:block;
-	max-width:760px;
-	clear:both;
-	margin:0 auto
-}
-.image-list li {
-	display:inline;
-	width:340px;
-	height:300px;
-	float:left;
-	margin:0 20px;
-	overflow:hidden
+
+.image-list div {
+	text-align: center;
+	padding: 30px;
 }
 .image-list a:hover img {
 	background:#e55047
 }
 .image-list img {
-	width:320px;
-	max-height:215px;
-	max-width:100%;
 	display:block;
-	margin:1em auto 1.8em auto;
+	margin:1em auto 1em auto;
 	border:1px solid #ddd;
 	padding:5px;
-	border-radius:5px
+	border-radius:5px;
+	max-width:640px;
 }
-.image-list li a {
+.image-list div a {
 	position:relative
 }
 .image-list .folder img {
 	border-color:#e5b2a6
 }
-.image-list li a span {
-	bottom:120px;
-	left:10px;
-	position:absolute;
-	height:30px;
-	width:300px;
-	font-size:20px;
-	line-height:30px;
-	color:#fff;
-	background:rgba(0,0,0,0.5);
-	display:none;
-	padding:0 10px
-}
-.image-list li a:hover span {
-	display:block
+.image-list div a span {
+	font-size: 1.3em;
 }
 .image {
 	margin:10px 0 0 0;
@@ -350,13 +329,13 @@ body {
 	overflow:hidden
 }
 .image .connected-images span {
-	font-size:1.2em;
+	font-size:5em;
 	color:#fff;
 	letter-spacing:2px;
 	bottom:20px;
 	display:none;
 	position:absolute;
-	top:45%
+	top:40%
 }
 .image .connected-images a:hover {
 	/*background:rgba(0,0,0,0.3);
@@ -365,7 +344,7 @@ body {
 	*zoom:1*/
 }
 .image .connected-images a:hover span {
-	color:black;
+	color:grey;
 	display:block
 }
 .image .connected-images .pre {
@@ -419,7 +398,7 @@ body {
 	color:#666
 }
 .sider #ds-recent-comments li.ds-comment {
-	border-top:1px dashed gainsboro
+	border-top:1px dashed gainsboro;
 }
 .sider a:hover {
 	color:#000
@@ -519,6 +498,7 @@ body {
 }
 
 /*--- code hilight ---*/
+code { padding: 0 4px; font-size: 0.9em; background-color: rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.07);}
 .codehilite pre{ background-color: #272822; overflow: auto; }
 .codehilite .hll { background-color: #49483e }
 .codehilite .c { color: #75715e } /* Comment */

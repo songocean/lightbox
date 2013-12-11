@@ -51,9 +51,6 @@
         {% endif %}
         {% set content = post.content | limit(200) %}
         <div class="post-intro">{{ content.no_pic }}</div>
-    {% endif %}
-    {% if post.metadata.link %}
-    {% else %}
         <a href="{{post.url}}">继续阅读</a>
     {% endif %}
 </article>
