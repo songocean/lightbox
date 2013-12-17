@@ -1,7 +1,7 @@
+key: farbox-template
 title: lightbox 
-
 domain: http://nixwang.com  
-
+no_inherit: yes
 ======
 ```
 特别感谢
@@ -35,6 +35,26 @@ domain: http://nixwang.com
 - 修改了导航条样式、侧边栏样式。
 - 修改了文章页面样式。
 
+-------
+
+更新：
+
+- 2013-12-09 
+    - 使用Bootstrap和Bootswatch更新了导航的样式。
+    - 在移动设备上隐藏侧边栏。
+    - post-list中的图片不再显示为小的缩略图，也不再是链接。
+    - 暂时去掉PHOTO页面，还没有修改好。
+- 2013-12-10
+    - 将原先主题中的screen.css中剥离出Font Awesome和自定义部分。
+    - 修改了文章内标题的大小和样式。
+    - 把代码高亮的样式设置为Sublime Text上的[Monokai](https://github.com/richleland/pygments-css/blob/master/monokai.css)。
+- 2013-12-17
+    - 去除了原有的布局，完全采用Bootstrap的栅格机制。
+    - 修改了导航条，改为Fixed，半透明。
+    - 加上了PHOTO链接。万一有人想不开要用我的模板，请记得把照片放在Dropbox中md文件同级的photo文件夹下。
+    - ARCHIVE页面中的外部链接不再指向post页面。
+
 # Feedback
 http://nixwang.com/post/2013-12-01-farbox-theme
+
 https://github.com/nix1024/lightbox

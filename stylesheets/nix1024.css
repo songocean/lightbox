@@ -24,66 +24,9 @@ img {
 .cf {
 	*zoom:1
 }
-body {
-	background:#fcfcfa;
-	color:#454034;
-	font:14px/1.5 'Droid Sans','Helvetica Neue',Arial,Helvetica,sans-serif
-}
-#wrap {
-	margin:20px auto;
-	width:980px;
-	padding:0 50px
-}
-#header {
-	padding:45px 0 10px 0;
-	border-bottom:1px solid #f1f1f1;
-	height:40px
-}
-#header .logo {
-	float:left;
-	width:30%;
-	font-size:2em;
-	margin:-10px 0 0 0;
-	font-weight:bold;
-	font-family:'Droid Sans','Helvetica Neue',Arial,Helvetica,"Microsoft yahei",sans-serif
-}
-#header .logo a {
-	color:#000;
-	text-decoration:none
-}
-#header .main-nav {
-	float:right;
-	font-size:16px
-}
-#header .main-nav ul,#header .main-nav li {
-	list-style:none;
-	margin:0;
-	padding:0
-}
-#header .main-nav li {
-	float:left;
-	padding:0 10px
-}
-#header .main-nav li a {
-	color:#999282
-}
-#header .main-nav li a:hover {
-	color:#333
-}
-#header .main-nav li .current {
-	color:#333
-}
+
 #main {
-	margin:25px 0
-}
-#main .primary {
-	width:100%;
-	max-width:650px;
-	float:left
-}
-#main .pages {
-	width:100%;
-	min-height:300px
+	padding-top:80px;
 }
 .loop-post {
 	padding-bottom: 1em;
@@ -272,7 +215,6 @@ body {
 	border:1px solid #ddd;
 	padding:5px;
 	border-radius:5px;
-	max-width:640px;
 }
 .image-list div a {
 	position:relative
@@ -363,48 +305,45 @@ body {
 .image .connected-images .next span {
 	right:5px
 }
-.sider {
-	width:230px;
-	float:right;
-	padding-left:20px
+.navbar-default {
+	background-color:rgba(44, 44, 44, 0.9);
 }
-.sider ul,.sider li {
+
+#sider ul, #sider li {
 	list-style:none;
 	margin:5px;
 	padding:0;
 }
-.sider aside {
-	margin-top:30px
+#sider aside {
+	margin-bottom:30px
 }
-.sider aside:first-child{
-	margin-top: 0;
-}
-.sider h3 {
+#sider h3 {
 	font-size: 1em;
 	color: #636363;
 	text-transform: uppercase;
 	margin: 0 0 1em 0;
 	font-weight: bold;
 }
-.sider h3 .icon-tasks {
+#sider h3 .icon-tasks {
 	color:orange
 }
-.sider a {
+#sider a {
 	font-size: 1em;
 	color: #666;
 }
-.sider #ds-recent-comments .ds-comment .ds-excerpt {
+#sider #ds-recent-comments .ds-comment .ds-excerpt {
 	font-size:14px;
 	color:#666
 }
-.sider #ds-recent-comments li.ds-comment {
+#sider #ds-recent-comments li.ds-comment {
 	border-top:1px dashed gainsboro;
 }
-.sider a:hover {
+#sider a:hover {
 	color:#000
 }
 #footer {
-	padding:30px 0;
+	padding-top:30px;
+	padding-bottom:30px;
 	border-top:1px solid #ccc
 }
 #footer .footer-right {
@@ -423,28 +362,7 @@ body {
 	background:#FCFCFA;
 	padding:0px
 }
-#wrap {
-	margin:0;
-	width:auto;
-	padding:0 2rem;
-	box-shadow:none
-}
-#header {
-	height:auto;
-	padding:25px 0 5px
-}
-#header .logo {
-	text-align:center;
-	width:100%;
-	float:none
-}
-#header .main-nav {
-	float:none;
-	text-align:center
-}
-#header .main-nav .menu {
-	display:inline-block
-}
+
 #main .primary {
 	margin:0;
 	float:none
@@ -460,16 +378,10 @@ body {
 .loop-post img {
 	margin: 20px auto;
 }
-.sider {
-	display: none;
-}
 .image-list li {
 	margin:0 auto;
 	float:none;
 	width:300px
-}
-.image-list img {
-	width:280px
 }
 .image img {
 	width:96%
@@ -477,7 +389,8 @@ body {
 .archive-list {
 	padding:0 10px
 }
-}@media (max-width:480px) {
+}
+@media (max-width:480px) {
 	#header .main-nav {
 	font-size:14px
 }

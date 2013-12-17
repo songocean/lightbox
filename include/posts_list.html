@@ -1,9 +1,10 @@
+<div id="primary" class="col-sx-12 col-md-9 col-lg-9">
 {% for post in posts %}
 <article class="loop-post">
     {% if post.metadata.link %}
         <h2>
-            <a href="{{post.metadata.link}}"> <i class="icon-external-link"></i>
-                {{ post.title }}
+            <a href="{{post.metadata.link}}">
+                {{ post.title }}&nbsp;<i class="icon-external-link"></i>            
             </a>
         </h2>
         <div class="entry-meta">
@@ -57,3 +58,4 @@
 {% endfor %}
 
 {% include 'include/paginator.html' %}
+</div>
