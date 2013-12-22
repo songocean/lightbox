@@ -5,7 +5,7 @@ no_inherit: yes
 ======
 ```
 特别感谢
-[衣不如新](!http://motype.org/‎)
+[衣不如新](http://motype.org/‎)
 ```
 
 ---
