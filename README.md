@@ -3,10 +3,10 @@ title: lightbox
 domain: http://nixwang.com  
 no_inherit: yes
 ======
-```
-特别感谢
-[衣不如新](!http://motype.org/‎)
-```
+
+> 特别感谢
+[衣不如新](http://motype.org/‎)
+
 
 ---
 # site.md配置说明   
