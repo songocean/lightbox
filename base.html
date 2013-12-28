@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
+    {% if request.host == 'www.nixwang.com' %}
+        {{ redirect('http://nixwang.com'+request.url_without_host) }}
+    {% endif %}
     <meta charset="UTF-8">
     <link rel='alternate' type='application/rss+xml' title='atom 1.0' href='/feed' />
     <title>{% block title %} {% endblock %}</title>
