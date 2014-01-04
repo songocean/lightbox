@@ -30,7 +30,11 @@
         <div class="entry">{{ post| auto_content }}</div>
     </article>
     <div id="disqus_thread" class="comments"></div>
-    {% if site.configs.duoshuo %}
+
+    {% if site.configs.disqus %}
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    {% elif site.configs.duoshuo %}
         <!-- Duoshuo Comment BEGIN -->
         <div class="comment-wrap"><div class="ds-thread"></div></div>            
         <!-- Duoshuo Comment END -->

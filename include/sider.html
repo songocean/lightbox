@@ -23,7 +23,14 @@
     </aside>
     </div>
     {% endif %}
-    {% if site.configs.duoshuo %}
+    {% if site.configs.disqus %}
+    <div class="hidden-xs col-sm-4 col-md-12">
+    <aside>
+        <h3><i class="icon-comments"></i>&nbsp;Recent Comments</h3>
+        <script type="text/javascript" src="http://{{ site.configs.disqus }}.disqus.com/recent_comments_widget.js?num_items=6&hide_avatars=1&excerpt_length=20"></script>
+    </aside>
+    </div>      
+    {% elif site.configs.duoshuo %}
     <div class="hidden-xs col-sm-4 col-md-12">
     <aside>
         <h3><i class="icon-comments"></i>&nbsp;Recent Comments</h3>
